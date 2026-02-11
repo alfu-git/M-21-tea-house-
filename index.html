@@ -6,41 +6,52 @@
   <title>Tea House</title>
   <link rel="shortcut icon" href="./images/favicon logo.png" type="image/x-icon">
 
-  <!-- tailwind link -->
+  <!-- tailwind css link -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./style/style.css">
 
   <!-- font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-  <!-- icon link -->
+  <!-- font awesome icon link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- css style -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      line-height: 1.5;
-      font-family: "Manrope", sans-serif;
-      box-sizing: border-box;
-    }
-
-    ul, ol {
-      list-style: none;      
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    img {
-      width: 100%;
-    }
-  </style>
+  <!-- bootstrap icon link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-  
+  <!-- banner section -->
+  <header>
+    <section class="banner-section">
+      <div class="container mx-auto p-5 flex gap-7.5 justify-between flex-col md:flex-row md:gap-0 lg:flex-row lg:gap-0">
+        <div class="banner-dt space-y-4 md:space-y-[30px]">
+          <h1 class="text-[#1C1C1C] font-extrabold text-4xl sm:w-[400px] md:text-5xl xl:text-7xl xl:w-[620px]">It's good <br> tea time at The Tea House</h1>
+          <p class="text-[#777777] font-medium text-base sm:text-lg md:w-[400px] lg:w-[513px]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+          <span>
+            <a href="#" class="inline-block bg-linear-to-r from-[#FF8938] to-[#FF0000] rounded-lg p-2 sm:p-3.5 lg:p-4.5">
+              <span class="text-[#FFFFFF] font-bold sm:text-base lg:text-xl">Explore More <i class="ml-1 bi bi-arrow-up-right"></i></span> 
+          </a>
+          </span>
+        </div>
+
+        <div class="banner-img relative md:pt-10 lg:pt-13">
+          <img src="./images/banner.png" alt="2 cup of drinks">
+
+          <div class="flex gap-3 justify-center items-center bg-[#FFFFFF] rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] px-3 py-2 sm:px-6 sm:py-4 absolute -bottom-5 left-6 sm:bottom-4 sm:left-16 md:bottom-10 md:left-8 lg:bottom-4 xl:bottom-4 xl:left-20">
+
+            <img class="h-11" src="./images/rating star.png" alt="rating star">
+            <div>
+              <span class="inline-block font-extrabold text-xl sm:text-3xl md:text-2xl lg:text-3xl">5.00</span>
+              <p class="text-[#777777] font-semibold text-[13px] sm:text-base md:text-sm lg:text-base">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
 </body>
 </html>
